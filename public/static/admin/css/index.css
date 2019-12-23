@@ -1,0 +1,180 @@
+.logout{
+	cursor: pointer;
+}
+.header {
+	background: #f4f4f4;
+    height: 60px;
+    line-height: 60px;
+    box-sizing: border-box;
+    padding: 0 16px;
+    font-size: 14px;
+    color: #666;
+}
+.header .name {
+	float: left;
+}
+.header .avator{
+	height: 30px;
+	width: 30px;
+	border-radius: 100%;
+	vertical-align: -9px;
+	cursor: pointer;
+}
+.header .header-right {
+	float: right;
+}
+.content {
+	background: #f4f4f4;
+    width: 90%;
+    margin: 20px auto;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.content .filter-wrapper {}
+.content select {
+	width: 100px;
+    height: 30px;
+    border: 1px solid #ddd;
+    color: #666;
+}
+.content .searchName {
+	height: 30px;
+    line-height: 30px;
+    width: 130px;
+    box-sizing: border-box;
+    padding: 0 3px;
+    font-size: 14px;
+}
+.content .searchBtn {
+	height: 30px;
+    background: #ec9a05;
+    padding: 0 25px;
+    color: #fff;
+    font-size: 13px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.content .addStudent {
+	float: right;
+    background: #ec9a02;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.stu-wrapper {
+	margin-top: 20px;
+    font-size: 14px;
+}
+.stu-wrapper .stu-tittle {
+	height: 30px;
+    line-height: 30px;
+    background: #0095c1;
+    color: #fff;
+}
+.stu-wrapper .stu-tittle li {
+	float: left;
+    width: 25%;
+    text-align: center;
+    border-right: 1px solid #0084ad;
+    box-sizing: border-box;
+}
+.stu-wrapper .stu-content {}
+.stu-wrapper .stu-content .stu-content-item {
+	height: 30px;
+    line-height: 30px;
+    background: #e3f5fb;
+    color: #666;
+}
+.stu-wrapper .stu-content .stu-content-item li {
+	float: left;
+    width: 25%;
+    text-align: center;
+    border-right: 1px solid #dedede;
+    box-sizing: border-box;
+    border-bottom: 1px solid #dedede;
+}
+.stu-wrapper .stu-content .stu-content-item li img {
+	cursor: pointer;
+	margin-right: 3px;
+}
+.add-dialog {
+	display: none;
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+}
+.add-dialog .add-dialog-inner {
+	width: 50%;
+    background: #fff;
+    margin: 30px auto;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 14px;
+    color: #555;
+    position: relative;
+}
+.add-dialog .add-dialog-inner .add-title {
+	border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.add-dialog .add-dialog-inner .add-item {margin-bottom: 10px;}
+.add-dialog .add-dialog-inner .add-item span {}
+.add-dialog .add-dialog-inner .add-item input {
+	border: 1px solid #eee;
+    height: 30px;
+    line-height: 30px;
+    width: 150px;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+.add-dialog .add-dialog-inner .add-item select {
+	height: 30px;
+    line-height: 30px;
+    width: 150px;
+    border: 1px solid #eee;
+    color: #555;
+}
+.add-dialog .add-dialog-inner .add-submit {
+	width: 150px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background: #f3ab09;
+    text-align: center;
+    cursor: pointer;
+}
+.add-dialog .add-dialog-inner .add-close {
+	position: absolute;
+    top: 6px;
+    right: 20px;
+    transform: rotate(45deg);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.pagination {
+	margin-top: 10px;
+    float: right;
+    margin-right: 4px;
+}
+.pagination li {
+	float: left;
+    font-size: 16px;
+}
+.pagination li span {
+	color: #888;
+    padding: 0 4px;
+}
+.pagination li a {
+	color: #0094c1;
+    padding: 0 4px;
+}
