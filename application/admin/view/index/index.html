@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<title>后台首页</title>
+		<meta charset='utf-8' /> 
+		<link rel="stylesheet" type="text/css" href="/static/admin/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="/static/admin/css/index.css"/>
+	</head>
+	<body>
+		<div class="header cf">
+			<span class="name"></span>
+			<div class="header-right">
+				<img src="" class="avator"/>
+				<span class="logout">退出</span>
+			</div>
+		</div>
+		<div class="content">
+			<div class="filter-wrapper">
+				<select class="province"></select>
+				<select class="city"></select>
+				<select class="district"></select>
+				<input type="text" class="searchName" placeholder="请输入学生姓名"/>
+				<input type="button" class="searchBtn" value="搜索"/>
+				<div class="addStudent">添加学生</div>
+			</div>
+
+			<div class="stu-wrapper">
+				<ul class="stu-tittle cf">
+					<li>姓名</li>
+					<li>班级</li>
+					<li>地区</li>
+					<li>操作</li>
+				</ul>
+				<div class="stu-content">
+					
+				</div>
+				<div class="pages cf"></div>
+			</div>
+		</div>
+		<!-- 编辑、添加公用弹出框 -->
+		<div class="add-dialog">
+			<div class="add-dialog-inner">
+				<h2 class="add-title">添加</h2>
+				<div class="add-item">
+					<span>姓名：</span>
+					<input type="text" name="stuName"/>
+				</div>
+				<div class="add-item">
+					<span>年级：</span>
+					<input type="text" name="grade"/>
+				</div>
+				<div class="add-item">
+					<span>班级：</span>
+					<input type="text" name="class"/>
+				</div>
+				<div class="add-item">
+					<span>省份：</span>
+					<select class="add-province">
+					</select>
+				</div>
+				<div class="add-item">
+					<span>城市：</span>
+					<select class="add-city"></select>
+				</div>
+				<div class="add-item">
+					<span>区县：</span>
+					<select class="add-district"></select>
+				</div>
+				<div class="add-submit">提交</div>
+				<div class="add-close">+</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="/static/admin/js/jquery.js"></script>
+	<script type="text/javascript" src="/static/admin/js/index.js"></script>
+</html>

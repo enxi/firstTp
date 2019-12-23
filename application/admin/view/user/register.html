@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>注册页面</title>
+		<meta charset='utf-8' /> 
+		<link rel="stylesheet" href="/static/uploadify/uploadify.css" />
+	</head>
+	<body>
+		<!-- 功能：
+			上传图片：前端uploadify
+			后台验证机制：tp5-validate 
+			验证码类库：composer require topthink/think-captcha
+			注册成功后发邮件 composer require phpmailer/phpmailer
+		-->
+		<h1>注册</h1>
+		<div class="item">
+			<span>姓名</span>
+			<input type="text" name="name"/>
+		</div>
+		<div class="item">
+			<span>电话</span>
+			<input type="text" name="tel"/>
+		</div>
+		<div class="item">
+			<span>EMAIL</span>
+			<input type="text" name="email"/>
+		</div>
+		<div class="item">
+			<span>上传头像</span>
+			<input type="file" name="file_upload" id="file_upload" multiple="true"/>
+			<img src="" id="upload_org_code_img" width="150" height="150" style="display:none;" />
+			<input type="hidden" name="logo" id="file_upload_image" multiple="true"/>
+		</div>
+		<div class="item">
+			<span>密码</span>
+			<input type="text" name="psd"/>
+		</div>
+		<div class="item">
+			<span>验证码</span>
+			<input type="text" name="verifyCode"/>
+			<img src="{:captcha_src()}" onclick="this.src='{:captcha_src()}'" class="captcha" alt="验证码" width=100 height=30/>
+		</div>
+		<button>注册</button>
+	</body>
+	<script type="text/javascript" src="/static/admin/js/jquery.js"></script>
+	<script type="text/javascript" src="/static/uploadify/jquery.uploadify.min.js"></script>
+	<script type="text/javascript" src="/static/admin/js/register.js"></script>
+</html>
